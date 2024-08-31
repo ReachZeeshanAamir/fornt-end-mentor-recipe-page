@@ -1,0 +1,242 @@
+/* Variables */
+
+:root{
+    --white:  hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+/* Fonts */
+
+.young-serif {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+.outfit-400 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.outfit-600 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}  
+.outfit-700 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}  
+
+
+/* General */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-900);
+    
+}
+img{
+    width: 100%;
+}
+p{
+    font-size: 16px;
+}
+
+
+/* Body */
+
+
+body{
+    background-color: var(--stone-100);
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* container */
+
+
+.main-container{
+    background-color: var(--white);
+    padding: 32px;
+    border-radius: 14px;
+}
+
+
+/* recipe desc and name */
+
+
+.recipe-name{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.recipe-img-container > img{
+    border-radius: 16px;
+}
+
+.recipe-description{
+    margin-bottom: 28px;
+}
+
+
+/* Prep time*/
+
+
+.recipe-prep-time > ul {
+    margin-left: 1rem;
+}
+
+.recipe-prep-time > ul > li::marker{
+    font-size: x-small;
+    color: var(--brown-800);
+}
+
+.recipe-prep-time > ul > li{
+    margin-bottom:16px;
+
+}
+.recipe-prep-time > ul >  li > b{
+    font-weight: 700;
+    color: var(--stone-900);
+    padding-left:1rem;
+}
+
+.recipe-prep-time{
+    background-color: var(--stone-100);
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 28px;
+}
+.recipe-prep-time > h3{
+    color: var(--rose-800);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+/* Recipe Ingredients */
+
+
+.recipe-ingredients > ul{
+    margin-left: 1rem;
+}
+.recipe-ingredients > ul > li::marker{
+    color: var(--brown-800);
+    font-size: x-small;
+}
+.recipe-ingredients > ul > li{
+    padding-left: 1rem;
+    margin-bottom: 16px;
+}
+
+.recipe-ingredients > h2{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--brown-800);
+}
+
+.after-ingredients-hr{
+    border-style: solid;
+    height: .5px;
+    /* border-style: none; */
+    color: var(--stone-150);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+/* Instructions Section*/
+
+
+
+.recipe-instructions > h2{
+    font-weight: 600;
+    color: var(--brown-800);
+    margin-bottom: 1rem;
+}
+
+.recipe-instructions > ol > li::marker {
+    /* font-size: ; */
+    font-family: "Outfit", sans-serif;
+    color: var(--brown-800);
+}
+
+.recipe-instructions > ol{
+    margin-left: 1rem;
+}
+.recipe-instructions > ol > li{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Nutritions Sections */
+
+
+.recipe-nutritions > h2{
+    color: var(--brown-800);
+    margin-bottom: 1rem;
+}
+
+
+.box{
+    border-bottom: 1px solid var(--stone-150);
+    padding-bottom: 1rem;
+}
+
+.nutritional-facts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nutritional-facts > div {
+    padding-top: 1rem;
+}
+
+.nutritional-facts > .details{
+    color: var(--brown-800);
+    font-weight: 600;
+}
+
+
+
+@media all and (max-width: 375px){
+    
+    
+    body{
+        background-color: var(--white);
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main-container > .main-content-container > .recipe-img-container{
+        background-color: var(--white);
+        padding: 0px;
+        border-radius: 0x;
+    }
+    .recipe-img-container > img{
+        border-radius: 0px;
+    }
+    
+
+}
