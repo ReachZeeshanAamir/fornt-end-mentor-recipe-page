@@ -67,8 +67,8 @@ body{
     background-color: var(--stone-100);
     margin-top: 80px;
     margin-bottom: 80px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /* container */
@@ -229,6 +229,14 @@ body{
         margin-left: 0;
         margin-right: 0;
     }
+    .content-container{
+        padding: 32px;
+    }
+    .main-container{
+        background-color: var(--white);
+        padding: 0px;
+        border-radius: 0px;
+    }
     .main-container > .main-content-container > .recipe-img-container{
         background-color: var(--white);
         padding: 0px;
@@ -236,6 +244,7 @@ body{
     }
     .recipe-img-container > img{
         border-radius: 0px;
+        height: 100%;
     }
     
 
